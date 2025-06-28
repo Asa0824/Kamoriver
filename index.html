@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>鴨川の治水技術</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+    :root {
+      --main-color: #333;
+      --bg-color: #fff;
+      --accent-color: #777;
+      --paper-bg: #f9f6f1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Serif JP', serif;
+      color: var(--main-color);
+      background-color: var(--bg-color);
+      line-height: 1.8;
+      padding: 0 1rem;
+    }
+
+    header {
+      padding: 2rem 0 1rem;
+      text-align: center;
+      border-bottom: 2px solid var(--main-color);
+      background-color: var(--paper-bg);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 0.1em;
+      animation: fadeDown 1s ease-out;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: var(--accent-color);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px dashed #ccc;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--main-color);
+      padding-left: 0.5rem;
+    }
+
+    section p {
+      margin-bottom: 0.5rem;
+    }
+
+    .photo-space {
+      background-color: #eee;
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border: 2px solid #aaa;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+    }
+
+    .photo-space img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    #topBtn:hover {
+      background-color: #555;
+    }
+
+    ul {
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 2px solid var(--main-color);
+      font-size: 0.9rem;
+      color: var(--accent-color);
+    }
+
+    @keyframes fadeDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>鴨川の治水技術</h1>
+    <p>伝統と現代技術が融合する、鴨川の治水の知恵</p>
+  </header>
+  <main>
+    <section class="fade-in">
+      <h2>高瀬堰（たかせぜき）</h2>
+      <p><strong>場所:</strong> 三条大橋のすぐ南側</p>
+      <p><strong>見どころ:</strong> 川の水位を調整する重要な堰で、川の流れを制御している様子を観察できます。</p>
+      <div class="photo-space">
+        <img src="S__41836555.jpg" alt="高瀬堰の写真">
+      </div>
+    </section>
+    <section class="fade-in">
+      <h2>石垣護岸（いしがきごがん）</h2>
+      <p><strong>場所:</strong> 鴨川デルタから四条大橋にかけて</p>
+      <p><strong>見どころ:</strong> 伝統的な石積みの護岸を間近で見ることができます。</p>
+      <div class="photo-space">
+        <img src="S__42803210.jpg" alt="石垣護岸の写真">
+      </div>
+    </section>
+    <section class="fade-in">
+      <h2>堤防（ていぼう）</h2>
+      <p><strong>場所:</strong> 出町柳から五条大橋</p>
+      <p><strong>見どころ:</strong> 両岸の堤防は整備され、歩きながら景観も楽しめます。</p>
+      <div class="photo-space">
+        <img src="S__42803214.jpg" alt="堤防の写真">
+      </div>
+    </section>
+    <section class="fade-in">
+      <h2>分流施設（ぶんりゅうしせつ）</h2>
+      <p><strong>場所:</strong> 鴨川デルタ（出町柳付近）</p>
+      <p><strong>見どころ:</strong> 洪水時に水を賀茂川・高野川へと分流させる仕組みが見られます。</p>
+      <div class="photo-space">
+        <img src="S__42803207.jpg" alt="分流施設の写真">
+      </div>
+    </section>
+    <section class="fade-in">
+      <h2>量水標（りょうすいひょう）</h2>
+      <p><strong>場所:</strong> 様々な橋の橋脚や川岸に設置</p>
+      <p><strong>見どころ:</strong> 川の水位を目視で確認するためのスケールで、現地での水位把握に役立っています。</p>
+      <div class="photo-space">
+        <img src="S__42803209.jpg" alt="量水標の写真">
+      </div>
+    </section>
+    <section class="fade-in">
+      <h2>鴨川荒神橋水位観測所（テレメーター）</h2>
+      <p><strong>場所:</strong> 荒神橋西詰</p>
+      <p><strong>見どころ:</strong> 雨量や水位をリアルタイムで計測・送信する電子観測所。データは防災情報として活用されます。</p>
+      <div class="photo-space">
+        <img src="S__42803208.jpg" alt="テレメーターの写真">
+      </div>
+    </section>
+    <section class="fade-in">
+      <h2>帯工（おびこう）</h2>
+      <p><strong>場所:</strong> 鴨川の川底各所</p>
+      <p><strong>見どころ:</strong> 川の流れを緩やかにし、河床の浸食を防ぐために川底に設けられた帯状の構造物です。</p>
+      <div class="photo-space">
+        <img src="S__42803206.jpg" alt="帯工の写真">
+      </div>
+    </section>
+    <section class="fade-in">
+      <h2>河川改修（かせんかいしゅう）</h2>
+      <p><strong>場所:</strong> 丸太町橋周辺</p>
+      <p><strong>見どころ:</strong> 川底の掘削や川幅の拡張によって治水機能が向上しています。</p>
+      <div class="photo-space">
+        <img src="S__42803213.jpg" alt="河川改修の写真">
+      </div>
+    </section>
+    <section class="fade-in">
+      <h2>自然と調和した治水技術</h2>
+      <p><strong>場所:</strong> 三条〜七条大橋間</p>
+      <p><strong>見どころ:</strong> ビオトープや植栽など、景観と調和した現代的治水の姿です。</p>
+      <div class="photo-space">
+        <img src="S__42803212.jpg" alt="ビオトープの写真">
+      </div>
+    </section>
+    <section class="fade-in">
+      <h2>治水技術マップ</h2>
+      <ul>
+        <li><strong>三条大橋:</strong> 高瀬堰、石垣護岸</li>
+        <li><strong>四条大橋:</strong> 石垣護岸</li>
+        <li><strong>鴨川デルタ（出町柳）:</strong> 分流施設、自然調和型治水</li>
+        <li><strong>荒神橋:</strong> テレメーター観測所</li>
+        <li><strong>丸太町橋:</strong> 河川改修</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 鴨川治水紹介サイト | 制作：浅岡凌雅
+  </footer>
+
+  <button id="topBtn" onclick="scrollToTop()">↑TOPへ</button>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    document.querySelectorAll('section').forEach(el => observer.observe(el));
+
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showImage(imgElement) {
+      const overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = 0;
+      overlay.style.left = 0;
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      overlay.style.display = 'flex';
+      overlay.style.alignItems = 'center';
+      overlay.style.justifyContent = 'center';
+      overlay.style.zIndex = 9999;
+      overlay.onclick = () => document.body.removeChild(overlay);
+
+      const enlarged = document.createElement('img');
+      enlarged.src = imgElement.src;
+      enlarged.style.maxWidth = '90%';
+      enlarged.style.maxHeight = '90%';
+      enlarged.style.border = '4px solid white';
+      enlarged.style.boxShadow = '0 0 20px rgba(255,255,255,0.6)';
+      overlay.appendChild(enlarged);
+
+      document.body.appendChild(overlay);
+    }
+
+    document.querySelectorAll('.photo-space img').forEach(img => {
+      img.addEventListener('click', function () {
+        showImage(this);
+      });
+    });
+  </script>
+</body>
+</html>
